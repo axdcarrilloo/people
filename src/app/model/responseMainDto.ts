@@ -1,11 +1,13 @@
+import { ClienteDto } from "./cliente-dto";
+
 export class ResponseMainDto {
 
     mensaje: string;
-    response: object;
+    cliente: ClienteDto;
 
-    constructor(mensaje: string, response: object) {
+    constructor(mensaje: string, cliente: ClienteDto) {
         this.mensaje = mensaje;
-        this.response = response;
+        this.cliente = cliente;
     }
 
 }
